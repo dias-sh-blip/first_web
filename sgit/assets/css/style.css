@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  font-size: 1.2em;
+  background-color: #fff;
+  color: #555;
+}
+
+p {
+  padding: 0 0 20px 0;
+  line-height: 1.7em;
+}
+
+input[type="text"], input[type="password"], input[type="search"] {
+  color: #5d5d5d;
+  width: 50%;
+  padding: 8px;
+} 
+
+input, textarea {
+  outline: none;
+  border: none;
+  border: solid 1px #f2f2f2;
+}
+
+
+
+h1, h2 {
+  font: normal 170% 'century gothic', arial;
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;
+  color: #000;
+}
+
+h2 {
+  font-size: 140%;
+}
+
+
+a, a:hover {
+  outline: none;
+  text-decoration: underline;
+  color: #aeb002;
+}
+
+ul {
+  margin: 0px 0 22px 17px;
+}
+
+ul li {
+  margin: 0 0 6px 0;
+  padding: 0 0 4px 5px;
+  line-height: 1.5em;
+}
+
+
+.auth {
+  color: black;
+  text-decoration: none;
+}  
+
+.auth:hover {
+  color: black;
+  text-decoration: none;
+  cursor:pointer;
+}  
+
+
+.main, .menubar, .site_content, .footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.register{
+  margin: 20px auto 50px auto;
+}
+
+body{
+  background-image: url(../img/fon.jpg);
+}
+
+#menubar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background: #57626f;
+  border-right: 4px solid #e0e5ea;
+  left: -250px;
+  transition: all 500ms;
+}
+
+#menubar.active {
+  left: 0px;
+}
+
+#menubar ul li:not(:first-child) {
+  width: 90%;
+  margin-left: 10%;
+  font-size: 1.1em;
+  list-style: none;
+  padding: 15px 10px;
+}
+
+#menubar ul li:first-child {
+  text-align: center;
+  color: white;
+  font-size: 1.95em;
+  list-style: none;
+  padding: 25px 10px 10px 10px;
+}
+
+
+#menubar ul li a {
+  color: #dfe5eb;
+  text-decoration: none;
+}
+
+#menubar ul li p{
+  color: #dfe5eb;
+}
+
+#menubar ul li p:hover{
+  cursor:pointer;
+}
+
+#menubar ul li a:hover {
+  color: #59e9df;
+}
+
+
+#menubar .toggle-btn {
+  position: absolute;
+  left: 270px;
+  top: 20px;
+  background: #e0e5ea;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+#menubar .toggle-btn span {
+  display: block;
+  width: 25px;
+  height: 4px;
+  background-color: #666;
+  margin: 4px 0;
+}
+
+
+#menubar .toggle-btn:hover {background: #556270;}
+#menubar .toggle-btn:hover span {background: #fafafa;}
+
+hr {
+  border: solid 1px #a9a9a9;
+}
+
+.site_content {
+  width: 880px;
+  overflow:hidden;
+  margin: 0 auto 0 auto;
+  background-color: white;
+}
+
+.sidebar_container {
+  float: right;
+  width: 224px;
+}
+
+.sidebar {
+  float: right;
+  width: 222px;
+  padding: 5%;
+  margin: 0 0 16px 0;
+  border: solid 1px #f2f2f2;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-top: 100px;
+}
+
+.btn {
+  padding: 8px;
+  background-color: white;
+  cursor:pointer;
+}
+
+.sidebar h2 {
+  color: #136cb2;
+}
+
+.lables_passreg_text {
+  font-size: 0.7em;
+  margin-top: 3%;
+  margin-left: 2%;
+}
+
+.sidebar .rating_sidebar {
+  float: right;
+}
+.content {
+  text-align: left;
+  width: 620px;
+  padding: 0 0 0 5px;
+  float: left;
+  margin-top: 50px;
+}
+
+.content a {
+  text-decoration: none;
+}
+
+.book_block {
+  margin-bottom: 5%;
+}
+
+.book_block img {
+  border-radius: 5px;
+  border: solid 5px #dad7d5;
+  margin-bottom: 20px;
+  width: 22%;
+  height: 190px;
+} 
+.msg{
+  padding: 5px;
+  font-size: 0.7em;
+}
+.none{display: none;}
+
+/* Страница просмотра книг */
+
+.info_book_page {
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+.info_book_page .label {
+  font-size: 1.2em;
+}
+
+.info_book_page .value {
+  font-size: 1em;
+  color: #49945A;
+  margin-right: 3%;
+}
+
+.descriptions_book {
+  margin-bottom: 15%;
+}
+
+.descriptions_book img{
+  float:left;
+  margin-right: 2%;
+  border-radius: 5px;
+  border: solid 5px #dad7d5;
+  width: 27%;
+}
+
+.reviews {
+  margin-bottom: 4%;
+  font-size: 0.9em;
+}
+
+.reviews .review_name {
+  background-color: #415570;
+  color: white;
+  padding: 1%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.reviews .review_text {
+  padding-top: 2%;
+  padding-bottom: 2%; 
+  padding-left: 2%;
+}
+
+.send {
+  margin-bottom: 4%;
+}
+
+.send input[type="text"], textarea {
+  border: solid 1px #C3C3C3;
+  margin-bottom: 2%;
+}
+
+.send input[type="text"]{
+  width: 98%;
+}
+
+.send textarea {
+  width: 624px;
+  height: 200px;
+}
+
+.send input[type="submit"]{
+  background-color: #415570;
+  padding: 3%;
+  color: white;
+  border-radius: 5px;
+}
+
+.send_contact input[type="text"] {
+  width: 500px;
+}
+
+.send_contact textarea {
+  width: 516px;
+}
+
+
+
+.info_book {
+  margin-bottom: 5%;
+  margin-top: 5%;
+  background-color: #f9f9f9;
+  padding: 5%;
+  height: 270px;
+
+}
+
+.info_book img {
+  float: left;
+  margin-right: 2%;
+  border-radius: 5px;
+  border: solid 5px #dad7d5;
+  width: 25%;
+  height: 85%;
+}
+
+.button {
+  background-color: #7268ad;
+  padding: 2%;
+  color: white;
+  border-radius: 5px;
+  float: right;
+  clear: both;
+  font-size: 0.8em;
+  transition: all .2s;
+}
+
+.button a {
+  color: white;
+}
+
+
+
+
+
+table {
+  width: 100%;
+  border: solid 1px #f4f4f4;
+  margin-bottom: 50px;
+}
+
+td {
+  padding: 2%;
+  border: solid 1px #f4f4f4;
+}
+
+td img {
+  width: 60px;
+  vertical-align: middle;
+}
+
+.center {
+  text-align: center;
+}
+
+.rating {
+  font-weight: bold;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  padding: 28px 0 5px 0;
+  text-align: center;
+  color: #a8aa94;
+  margin-left: 0px;
+  margin-right: 0px;
+  min-width: 900px;
+  background: #57626f;
+
+}
+
+.footer a {
+  color: #a8aa94;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
